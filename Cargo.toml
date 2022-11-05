@@ -1,0 +1,5 @@
+[workspace]
+members = [
+  "plan_a",
+  "utilities/utility_a",
+]

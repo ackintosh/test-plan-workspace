@@ -1,0 +1,16 @@
+name = "plan_a"
+
+[defaults]
+builder = "docker:generic"
+runner = "local:docker"
+disable_metrics = false
+
+[builders."docker:generic"]
+enabled = true
+
+[runners."local:docker"]
+enabled = true
+
+[[testcases]]
+name = "plan_a"
+instances = { min = 3, max = 100, default = 3 }
